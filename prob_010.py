@@ -29,5 +29,5 @@ def prime_sum(limit):
 
         
 # main
-
-print(prime_sum(int(2e6)))
+if __name__ == '__main__':
+    print(prime_sum(int(2e6)))
