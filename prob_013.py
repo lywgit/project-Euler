@@ -133,16 +133,18 @@ def large_sum(number_string_list):
         total = int_str_sum(total, number_string_list[i])
     return total
 
-# In fact, python can hold large int, so this is kind of cheating ...
-summation = numbers.sum()
-print(summation)
-print(str(summation)[0:10])
 
-# let's pretend we can only store large int as str
-numbers_string = [str(i) for i in numbers]
-summation = large_sum(numbers_string)
-print(summation)
-print(summation[0:10])
+if __name__ == '__main__':
+    # In fact, python can hold large int, so this is kind of cheating ...
+    summation = numbers.sum()
+    print(summation)
+    print(str(summation)[0:10])
+    
+    # let's pretend we can only store large int as str
+    numbers_string = [str(i) for i in numbers]
+    summation = large_sum(numbers_string)
+    print(summation)
+    print(summation[0:10])
 
 
 
