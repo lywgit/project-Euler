@@ -32,9 +32,7 @@ def int_str_multiply_single_digit(a, b_single):
 
 def int_str_multiply(a, b):
     if len(a) < len(b):
-        temp = b
-        b = a
-        a = temp
+        (a, b) = (b, a)
     place = 0
     result = '0'
     for i in reversed(range(len(b))):
