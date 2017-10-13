@@ -15,7 +15,7 @@ Idea:
 """
 
 import unittest
-from prob_015 import factor
+from prob_015 import factorial
 
 
 def hierarchy_indices(query, divisors):
@@ -54,7 +54,7 @@ def lexicographic_permutation(digits, query_permutation):
     """
     num_digits = len(digits)
     q = query_permutation - 1 # zero-based
-    divisors = [factor(i) for i in reversed(range(1,num_digits))]
+    divisors = [factorial(i) for i in reversed(range(1,num_digits))]
     indices = hierarchy_indices(q, divisors)
     result = arranged_digits(indices, digits)
     return result

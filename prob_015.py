@@ -6,16 +6,16 @@ Problem 15 Lattice paths
 @author: lywang
 """
 
-def factor(i):
+def factorial(i):
     if i==0:
         return 1
     else:
-        return i * factor(i-1)
+        return i * factorial(i-1)
     
 def lattice_paths(shape):
     n1 = shape[0]
     n2 = shape[1]
-    return factor(n1+n2) // (factor(n1)*factor(n2)) # integer division
+    return factorial(n1+n2) // (factorial(n1)*factorial(n2)) # integer division
 
 
 """ 
@@ -25,4 +25,3 @@ Find combinations of possible distrinct arrangement
 if __name__ == "__main__":
     print(lattice_paths([20,20]))
 
-print(factor(0))
