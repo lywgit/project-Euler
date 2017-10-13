@@ -7,7 +7,7 @@ Problem 15 Lattice paths
 """
 
 def factor(i):
-    if i==1:
+    if i==0:
         return 1
     else:
         return i * factor(i-1)
@@ -25,3 +25,4 @@ Find combinations of possible distrinct arrangement
 if __name__ == "__main__":
     print(lattice_paths([20,20]))
 
+print(factor(0))
