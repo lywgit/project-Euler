@@ -35,7 +35,7 @@ def num_divisors(k):
         combination *= (expo + 1)
     return combination
 
-def first_triangle_with_k_plus_divosor(k):
+def first_triangle_with_k_plus_divisor(k):
     natural = 1
     triangle_number = 1
     n_d = num_divisors(triangle_number)
@@ -48,5 +48,5 @@ def first_triangle_with_k_plus_divosor(k):
             
 
 if __name__ == '__main__':
-    print(first_triangle_with_k_plus_divosor(500))
+    print(first_triangle_with_k_plus_divisor(500))
 
