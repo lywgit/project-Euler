@@ -28,5 +28,5 @@ def loop_triplet(triplet_sum):
 
 
 # main
-    
-loop_triplet(1000)
+if __name__ == '__main__':
+    loop_triplet(1000)
